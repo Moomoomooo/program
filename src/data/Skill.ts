@@ -5,6 +5,7 @@ import { Entity } from '#enums/Entity.ts';
 
 export type Skill {
   readonly name: string;
+  readonly master: Entity;
   readonly cooldown: number;
   time: number;
   ready: boolean;
