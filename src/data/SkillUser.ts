@@ -24,9 +24,10 @@ export abstract class SkillUser {
       cooldown: cooldown,
       time: 0,
       flags: flags,
-      effect: effect,
+      
+      use: effect,
     };
-    skills.push(
+    skills.push(s);
   }
   
 }
