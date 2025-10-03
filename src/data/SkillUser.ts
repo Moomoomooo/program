@@ -1,5 +1,8 @@
 import { Skill } from '#data/Skill.ts';
 import { Die } from '#data/Die.ts';
+import { SkillTargets } from '#enums\SkillTargets.ts';
+import { SkillPhases } from '#enums\SkillPhases.ts';
+import { SkillFlags } from '#enums\SkillFlags.ts';
 
 export abstract class SkillUser {
   name: string;
@@ -17,7 +20,7 @@ export abstract class SkillUser {
   }
   
   
-  public addSkill(name: String, cooldown: number, target: SkillTarget, phase: SkillPhase, flags: SkillFlags[] ,effect: (target) => void): void {
+  public addSkill(name: String, cooldown: number, target: SkillTargets, phase: SkillPhases, flags: SkillFlags[] ,effect: (target) => void): void {
 
     const s = {
       name: name,
