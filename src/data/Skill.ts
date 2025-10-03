@@ -3,7 +3,7 @@ import { SkillTargets } from '#enums/SkillTargets.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { Entity } from '#enums/Entity.ts';
 
-export class Skill {
+export abstract class Skill {
   readonly name: string;
   readonly cooldown: number;
   time: number;
@@ -11,7 +11,6 @@ export class Skill {
   readonly phase: SkillPhases;
   readonly targets: SkillTargets;
   readonly flags: SkillFlags[];
-  effect: (target) => void;
 
   constructor(name: string, cooldown: number, phase: SkillPhase, targets: SkillTargets, flags: SkillFlags[]) {
     
@@ -23,4 +22,6 @@ export class Skill {
       this.ready = true;
     }
   }
+
+  public use(target): void;
 }
