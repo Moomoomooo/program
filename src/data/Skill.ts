@@ -3,7 +3,7 @@ import { SkillTargets } from '#enums/SkillTargets.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { Entity } from '#enums/Entity.ts';
 
-export interface Skill {
+export type Skill {
   readonly name: string;
   readonly master: Entity;
   readonly cooldown: number;
@@ -12,5 +12,5 @@ export interface Skill {
   readonly phase: SkillPhases;
   readonly targets: SkillTargets;
   readonly flags: SkillFlags[];
-  public use(target): void;
+  use: (target) => void;
 }
