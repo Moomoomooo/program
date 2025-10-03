@@ -17,14 +17,15 @@ export abstract class SkillUser {
   }
   
   
-  public addSkill(name: String, cooldown: number, target: SkillTarget, flags: SkillFlags[] ,effect: (target) => void): void {
+  public addSkill(name: String, cooldown: number, target: SkillTarget, phase: SkillPhase, flags: SkillFlags[] ,effect: (target) => void): void {
 
     const s = {
       name: name,
       cooldown: cooldown,
       time: 0,
+      ready: true,
       flags: flags,
-      
+      phase: phase,
       use: effect,
     };
     skills.push(s);
