@@ -12,5 +12,5 @@ export interface Skill {
   readonly phase: SkillPhases;
   readonly targets: SkillTargets;
   readonly flags: SkillFlags[];
-  use: (target) => void;
+  public use(target): void;
 }
