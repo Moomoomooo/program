@@ -13,12 +13,18 @@ class Die {
 export class DicePool {
   dice: Die[];
 
+  constructor(string pool) {
+    
+  }
+
   public rollAll() {
     total: number = 0;
     for (const die of dice) {
       total += die.roll();
-  }
+    }
     return total;
+  }
 }
+
   
     
