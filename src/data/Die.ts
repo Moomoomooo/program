@@ -1,7 +1,3 @@
-export class Die {
+export type Die {
   size: number;
-
-  constructor(size: string) {
-    this.size = Number(size.trim().slice();
-  }
 }
