@@ -1,4 +1,4 @@
-export enum AbilityTarget {
+export enum SkillTarget {
   SELF,
   ENEMY,
   ALLY,
