@@ -33,5 +33,12 @@ export abstract class SkillUser {
     };
     skills.push(s);
   }
-  
+
+  public cool(): void {
+    for (let skill of skills) {
+      skill.time++;
+      if (skill.time >= skill.cooldown && skill.cooldown !== 0) {
+        skill.ready = true;
+      }
+  }
 }
