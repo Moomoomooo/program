@@ -5,5 +5,10 @@ export interface SkillUser {
   name: string;
   stats: number[]; // maxHp, rollMod, spellMod, initiative, armor, statusResist
 
+  skills: Skill[];
+
+  public getSkillByName(): Skill {
+  
+  }
   
 }
