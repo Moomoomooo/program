@@ -7,8 +7,14 @@ export interface SkillUser {
 
   skills: Skill[];
 
-  public getSkillByName(): Skill {
-  
+  public getSkillByName(name: string): Skill | Null {
+    for (const skill of this.skills) {
+      if (skill.name === name) {
+        return skill;
+      } else {
+        return null;
+      }
+    }
   }
   
 }
