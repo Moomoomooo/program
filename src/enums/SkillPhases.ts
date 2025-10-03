@@ -1,0 +1,11 @@
+export enum SkillPhases {
+  ROUND_START,
+  ACTIVATE,
+  ATTACK,
+  BEFORE_HIT,
+  ON_HIT,
+  ON_DEATH,
+  ON_KILL,
+  REACT_HIT,
+  ROUND_END
+}
