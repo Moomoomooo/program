@@ -1,5 +1,5 @@
 import { Skill } from '#data/Skill.ts';
-import { Die } from '#data/Die.ts';
+import { Dice } from '#data/Dice.ts';
 import { SkillTargets } from '#enums\SkillTargets.ts';
 import { SkillPhases } from '#enums\SkillPhases.ts';
 import { SkillFlags } from '#enums\SkillFlags.ts';
