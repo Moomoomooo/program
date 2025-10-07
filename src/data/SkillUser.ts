@@ -27,6 +27,7 @@ export abstract class SkillUser {
       cooldown: cooldown,
       time: 0,
       ready: true,
+      targets: target,
       flags: flags,
       phase: phase,
       use: effect,
