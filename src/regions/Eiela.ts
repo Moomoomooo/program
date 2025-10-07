@@ -1,3 +1,7 @@
-import { Region } from '#Region.ts';
+import { Region } from '#regions/Region.ts';
+import { RegionId } from '#enums/RegionId';
 
-export const Eiela: Region = 
+export const Eiela: Region = {
+  name: string = "Eiela",
+  regionId = RegionId.EIELA; 
+}
