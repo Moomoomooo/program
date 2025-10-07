@@ -1,8 +1,13 @@
 import { SkillUser } from '#data/SkillUser.ts';
 
-export abstract class Entity implements SkillUser {
+export abstract class Entity extends SkillUser {
   
   tempStats: number[];
+
+  constructor(name: string, stats: number[], ) {
+    super();
+    
+  }
 
   
 }
