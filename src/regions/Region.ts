@@ -1,10 +1,6 @@
 import { RegionId } from '#enum/RegionId'
 
-export class Region {
+export interface Region {
+  name: string;
   regionId: RegionId;
-
-  constructor (regionId: RegionId) {
-    this.regionId = RegionId;
-  }
-  
 }
