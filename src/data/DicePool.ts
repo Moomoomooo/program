@@ -11,10 +11,10 @@ class Die {
 }
 
 export class DicePool {
-  dice: Die[];
+  pool: Die[];
 
   constructor(string pool) {
-    
+    this.add(pool)
   }
 
   public rollAll() {
@@ -23,6 +23,14 @@ export class DicePool {
       total += die.roll();
     }
     return total;
+  }
+
+  public add(input: string): void {
+    let arr: string[] = pool.split(",");
+    for (const str: string of arr) {
+      let d: Die = new Die(str);
+      dice.push(d);
+    }
   }
 }
 
