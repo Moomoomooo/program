@@ -9,6 +9,12 @@ export abstract class SkillUser {
   stats: number[]; // maxHp, rollMod, spellMod, initiative, armor, statusResist
   skills: Skill[];
 
+  constructor(name: string, stats: number[]) {
+    this.name = name;
+    this.stats = stats;
+    this.skills = [];
+  }
+
   public getSkillByName(name: string): Skill | Null {
     for (const skill of this.skills) {
       if (skill.name === name) {
