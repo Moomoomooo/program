@@ -1,5 +1,6 @@
 import { Entity } from '#data/Entity.ts';
+import { MonsterSpecies } from '#data/Entity.ts';
 
-export class Monster: Entity {
+export class Monster extends Entity {
   
 }
