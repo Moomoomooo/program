@@ -57,6 +57,6 @@ export abstract class SkillUser {
   }
 
     public addDmgResist(type: DmgResistance, value: number) {
-      this.resistances[type] = value;
+      this.resistances[type] = value; // dmg resistance scales from 0 to 1. damage gets reduced by a factor of 1 minus the resistance value. for example, a resistance of .6 means they only take 40% damage from that damage type
     }
 }
