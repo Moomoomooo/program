@@ -8,6 +8,6 @@ export const Niam: Entity = new Entity("Niam", [10, 0, 0, 1, 5], "d10");
 Niam.addSkill("power attack", 3, [SkillFlags.PHYSICAL, SkillFlags.DAMAGING], SkillPhases.ATTACK, SkillTargets.ENEMY, (): number => {
   return 
 });
-Niam.addSkill("fire bolt", 2, [SkillFlags.SPELL, SkillFlags.FIRE, SkillFlags.DAMAGING], SkillPhases.ATTACK, SkillTargets.ENEMY, (): number => {
-  return 
+Niam.addSkill("fire bolt", 2, [SkillFlags.SPELL, SkillFlags.FIRE, SkillFlags.DAMAGING], SkillPhases.ACTIVATE, SkillTargets.ENEMY, (): number => {
+  return master.dice.pool[0] + master.stats[2];
 });
