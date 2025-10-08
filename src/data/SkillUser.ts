@@ -1,5 +1,4 @@
 import { Skill } from '#data/Skill.ts';
-import { DicePool } from '#data/DicePool.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillFlags } from '#enums/SkillFlags.ts';
@@ -8,14 +7,13 @@ import { DmgResistance } from '#enums/DmgResistance.ts';
 export abstract class SkillUser {
   name: string;
   stats: number[]; // maxHp, rollMod, spellMod, initiative, armor, statusResist
-  dice: DicePool;
+  attackPower: number;
   skills: Skill[];
   resistances: number[]; // physical, magic, fire, ice, lightning, poison, holy, unholy
 
-  constructor(name: string, stats: number[], dice: string) {
+  constructor(name: string, stats: number[]) {
     this.name = name;
     this.stats = stats;
-    this.dice = new DicePool(dice);
     this.skills = [];
     this.resistances = new Array(8);
   }
