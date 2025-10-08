@@ -16,12 +16,13 @@ const fido = new Ally("Fido", [5, 0, 0, 2, 4], 4, niam.level, (): number => {
   this.attackPower = this.baseAttackPower + this.level;
 });
 const fidosLevelUpSkillList: LevelUpSkill[] = {
-  [1, newSkill("Bark", 3, [Skillflags.DEBUFF],SkillPhase.ATTACK, SkillTargets.ALL_ENEMIES, (): any => {
+  [1, newSkill("Bark", fido, 3, [Skillflags.DEBUFF],SkillPhase.ATTACK, SkillTargets.ALL_ENEMIES, (): any => {
+    
+  })],
+  [5, newSKill("Rip and Tear", fido, 4, [], SKillPhase.ATTACK, SkillTargets.ENEMY, (): any => {
     
   })],
   
 };
-
-
 fido.setLevelUpSkillData(fidosLevelupSkillList)
 AllAllies.push(fido);
