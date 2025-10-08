@@ -1,18 +1,21 @@
 import { Skill } from '#data/Skill.ts';
 import { Dice } from '#data/Dice.ts';
-import { SkillTargets } from '#enums\SkillTargets.ts';
-import { SkillPhases } from '#enums\SkillPhases.ts';
-import { SkillFlags } from '#enums\SkillFlags.ts';
+import { SkillTargets } from '#enums/SkillTargets.ts';
+import { SkillPhases } from '#enums/SkillPhases.ts';
+import { SkillFlags } from '#enums/SkillFlags.ts';
+import { DmgResistance } from '#enums/DmgResistance.ts';
 
 export abstract class SkillUser {
   name: string;
   stats: number[]; // maxHp, rollMod, spellMod, initiative, armor, statusResist
   skills: Skill[];
+  resistances: number[]; // physical, magic, fire, ice, lightning, poison, holy, unholy
 
   constructor(name: string, stats: number[]) {
     this.name = name;
     this.stats = stats;
     this.skills = [];
+    this.resistances = new Array(8);
   }
 
   public getSkillByName(name: string): Skill | Null {
@@ -48,4 +51,8 @@ export abstract class SkillUser {
         skill.ready = true;
       }
   }
+
+    public addDmgResist(type: DmgResistance, value: number) {
+      this.resistances[type] = value;
+    }
 }
