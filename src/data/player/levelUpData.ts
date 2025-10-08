@@ -1,5 +1,5 @@
 import { Skill } from '#data/Skill.ts';
-export const levelMoves: [number, Skill][] = {
+export const levelUpSkills: [number, Skill][] = {
   [3, ],
   [],
 }
