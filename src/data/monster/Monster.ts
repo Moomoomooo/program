@@ -9,6 +9,6 @@ export class Monster extends Entity {
 
 /* new Monster("Cacophony of the Holy")
 
-cacophony.addSkill("Song of the Secret", 
+cacophony.addSkill("Song of the Secret", 3, 
 
 */
