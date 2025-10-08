@@ -8,6 +8,6 @@ import { niam } from '#player/Niam.ts';
 export const AllAllies: Ally[] = {};
 
 
-const fido = new Ally("Fido", )
+const fido = new Ally("Fido", [6, 1, 0, 3, 5], )
 
 
