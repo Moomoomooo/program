@@ -9,12 +9,13 @@ export class Monster extends Entity {
 
 /* new Monster("Cacophony of the Holy")
 
-cacophony.addDmgResist(DmgResistance.PHYSICAL, 0.5)
-cacophony.addDmgResist(DmgResistance.FIRE, 0.75)
-cacophony.addDmgResist(DmgResistance.ICE, 0.75)
-cacophony.addDmgResist(DmgResistance.LIGHTNING, 0.75)
-
-cacophony.addDmgResist(DmgResistance.HOLY, 1);
+cacophony.addDmgResist(DmgResistance.PHYSICAL, 0.5);
+cacophony.addDmgResist(DmgResistance.MAGICAL, 0.5);
+cacophony.addDmgResist(DmgResistance.FIRE, 0.75);
+cacophony.addDmgResist(DmgResistance.ICE, 0.75);
+cacophony.addDmgResist(DmgResistance.LIGHTNING, 0.75);
+cacophony.addDmgResist(DmgResistance.HOLY, -0.25);
+cacophony.addDmgResist(DmgResistance.UNHOLY, -0.25);
 
 cacophony.addSkill("Song of the Secret", 3, SkillTarget.ALL_OTHERS, SkillPhase.ATTACK, [SkillFlags.HOLY, SkillFlags.DEBUFF, SKillFlags.DAMAGING], (target: Entity) => {
  inflicts 45-60 holy dmg
