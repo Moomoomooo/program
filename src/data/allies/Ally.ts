@@ -1,11 +1,12 @@
 import { Entity } from '#data/Entity.ts';
-import { Skill } from "#types/Skill.ts';
+import { Skill } from '#types/Skill.ts';
+import { LevelUpSkill } from '#types/LevelUpSkill.ts';
   
 export class Ally extends Entity {
   level: number;
   readonly baseAttackPower: number;
   readonly baseStats: number[];
-  skillData: [number, skill][];
+  skillData: LevelUpSkill[];
   powerScale: () => number;
   
   
