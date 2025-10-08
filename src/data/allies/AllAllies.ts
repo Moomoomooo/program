@@ -4,6 +4,7 @@ import { SkillFlags } from '#enums/SkillFlags.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
 import { niam } from '#player/Niam.ts';
+import { LevelUpSkillList } from '#types/LevelUpSkillList.ts';
 
 export const AllAllies: Ally[] = {};
 
@@ -14,6 +15,8 @@ const fido = new Ally("Fido", [5, 0, 0, 2, 4], 4, niam.level, (): number => {
   }
   this.attackPower = this.baseAttackPower + this.level;
 });
+
+fido.
 
 AllAllies.push(fido);
 
