@@ -6,7 +6,7 @@ export class Ally extends Entity {
   baseAttackPower: number;
   baseStats: number[];
   skillData: [number, skill][];
-  powerScale: (lv: number, power: number, bStats: number[]) => number;
+  powerScale: () => number;
   
   
   constructor(name: string, stats: number[], attackPower: number, level: number, powerscale: (lv: number, power: number) => number) {
