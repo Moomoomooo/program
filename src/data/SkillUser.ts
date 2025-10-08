@@ -11,9 +11,10 @@ export abstract class SkillUser {
   skills: Skill[];
   resistances: number[]; // physical, magic, fire, ice, lightning, poison, holy, unholy
 
-  constructor(name: string, stats: number[]) {
+  constructor(name: string, stats: number[], attackPower: number) {
     this.name = name;
     this.stats = stats;
+    this.attackPower = attackPower;
     this.skills = [];
     this.resistances = new Array(8);
   }
