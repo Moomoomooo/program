@@ -9,7 +9,7 @@ export class Ally extends Entity {
   powerScale: () => number;
   
   
-  constructor(name: string, stats: number[], attackPower: number, level: number, powerscale: (lv: number, power: number) => number) {
+  constructor(name: string, stats: number[], attackPower: number, level: number, powerscale: () => number) {
     super();
     this.baseAttackPower = attackPower;
     this.baseStats = stats[];
@@ -20,7 +20,7 @@ export class Ally extends Entity {
   }
 
   public rescaleAlly() {
-    this.powerscale(this.level, this.baseAttackPower, this.baseStats);
+    this.powerscale();
   }
 
 }
