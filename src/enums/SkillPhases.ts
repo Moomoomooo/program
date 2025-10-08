@@ -1,7 +1,6 @@
 export enum SkillPhases {
   ROUND_START,
   ACTIVATE,
-  CANTRIP,
   ATTACK,
   BEFORE_HIT,
   ON_HIT,
