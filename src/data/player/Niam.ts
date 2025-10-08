@@ -4,9 +4,11 @@ import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
 import { levelUpData } from '#player/LevelUpData.ts';
 import { Skill } from '#data/Skill.ts';
+import { Ally } from '#allies/Ally.ts';
 
 export const niam: Entity = new Entity("Niam", [10, 0, 0, 1, 5], 10);
 niam.level = 1;
+niam.Allies = [];
 
 niam.levelUp = (): void => {
   this.level++;
