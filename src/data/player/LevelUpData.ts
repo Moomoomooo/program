@@ -1,5 +1,6 @@
 import { Skill } from '#types/Skill.ts';
-export const levelUpSkills: [number, Skill][] = {
+import { levelUpSkill } from '#types/LevelUpSkill';
+export const levelUpSkills: levelUpSkill[] = {
   [3, ],
   [],
 }
