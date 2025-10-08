@@ -1,6 +1,6 @@
 export enum DmgResistance {
   PHYSICAL,
-  MAGIC,
+  FORCE,
   FIRE,
   ICE,
   LIGHTNING,
