@@ -12,7 +12,7 @@ const fido = new Ally("Fido", [5, 0, 0, 2, 4], 4, niam.level, (): number => {
   for (let i = 0; i < 6; i++) {
     this.stats[i] = this.baseStats[i] + this.level;
   }
-  attackPower = baseAttackPower + this.level;
+  this.attackPower = this.baseAttackPower + this.level;
 });
 
 AllAllies.push(fido);
