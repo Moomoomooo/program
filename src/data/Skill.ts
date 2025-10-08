@@ -12,5 +12,5 @@ export type Skill {
   readonly phase: SkillPhases;
   readonly targets: SkillTargets;
   readonly flags: SkillFlags[];
-  use: (target) => void;
+  use: (target: Entity) => void;
 }
