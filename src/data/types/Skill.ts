@@ -28,6 +28,6 @@ export function newSkill(name: string, master: Entity, cooldown: number, flags: 
       phase: phase,
       use: effect,
     };
-    skills.push(s);
+    return(s);
   }
 }
