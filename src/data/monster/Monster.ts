@@ -1,6 +1,6 @@
 import { Entity } from '#data/Entity.ts';
 import { MonsterSpecies } from '#data/Entity.ts';
-import { Skill } from '#data/Skill.ts';
+import { Skill } from '#types/Skill.ts';
 
 export class Monster extends Entity {
  species: MonsterSpecies;
