@@ -1,5 +1,5 @@
 import { Ally } from '#allies/Ally.ts';
-import { Skill } from '#types/Skill.ts';
+import { Skill, newSkill } from '#types/Skill.ts';
 import { SkillFlags } from '#enums/SkillFlags.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
@@ -16,9 +16,12 @@ const fido = new Ally("Fido", [5, 0, 0, 2, 4], 4, niam.level, (): number => {
   this.attackPower = this.baseAttackPower + this.level;
 });
 const fidosLevelUpSkillList: LevelUpSkill[] = {
-  [1, {}],
-}
+  [1, newSkill("Bark", 3, [Skillflags.DEBUFF],SkillPhase.ATTACK, SkillTargets.ALL_ENEMIES, (): any => {
+    
+  })],
+  
+};
+
+
 fido.setLevelUpSkillData(fidosLevelupSkillList)
 AllAllies.push(fido);
-
-
