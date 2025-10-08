@@ -1,3 +1,3 @@
 import { Skill } from '#types/Skill.ts';
 
-export type levelUpSkill = [number, Skill][]
+export type levelUpSkill = [number, Skill]
