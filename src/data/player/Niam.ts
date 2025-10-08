@@ -2,7 +2,7 @@ import { Entity } from '#data/Entity.ts';
 import { SkillFlags } from '#enums/SkillFlags.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
-import { LevelUpData } from '#player/LevelUpData.ts';
+import { levelUpData } from '#player/LevelUpData.ts';
 import { Skill } from '#data/Skill.ts';
 import { Ally } from '#allies/Ally.ts';
 
