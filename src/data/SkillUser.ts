@@ -31,7 +31,7 @@ export abstract class SkillUser {
   }
   
   
-  public addSkill(name: String, cooldown: number, targets: SkillTargets, phase: SkillPhases, flags: SkillFlags[] ,effect: (target) => void): void {
+  public addSkill(name: string, cooldown: number, targets: SkillTargets, phase: SkillPhases, flags: SkillFlags[] ,effect: (target) => void): void {
 
     const s = {
       name: name,
