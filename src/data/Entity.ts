@@ -1,5 +1,4 @@
 import { SkillUser } from '#data/SkillUser.ts';
-import { DicePool } from '#DicePool.ts';
 
 export abstract class Entity extends SkillUser {
   
