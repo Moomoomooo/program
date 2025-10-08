@@ -2,6 +2,8 @@ export enum SkillTargets {
   SELF,
   ENEMY,
   ALLY,
-  ALL_OTHERS
+  ALL_ENEMIES,
+  ALL_ALLIES,
+  ALL_OTHERS,
 }
   
