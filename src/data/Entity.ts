@@ -15,7 +15,7 @@ export abstract class Entity extends SkillUser {
   }
 
   public calcRawBaseAttackDmg(): number {
-    return this.dice.rollAll() + this.
+    return this.dice.rollAll() + this.stats[1] + this.tempStats[1];
   }
   
 }
