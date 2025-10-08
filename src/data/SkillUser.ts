@@ -32,9 +32,11 @@ export abstract class SkillUser {
   
   
   public addSkill(name: string, cooldown: number, targets: SkillTargets, phase: SkillPhases, flags: SkillFlags[] ,effect: (target: Entity) => void): void {
+    const self = this;
 
     const s = {
       name: name,
+      master: self;
       cooldown: cooldown,
       time: 0,
       ready: true,
