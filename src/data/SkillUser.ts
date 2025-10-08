@@ -1,4 +1,4 @@
-import { Skill } from '#data/Skill.ts';
+import { Skill } from '#types/Skill.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
 import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillFlags } from '#enums/SkillFlags.ts';
