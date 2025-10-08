@@ -3,7 +3,15 @@ import { MonsterSpecies } from '#data/Entity.ts';
 import { Skill } from '#data/Skill.ts';
 
 export class Monster extends Entity {
+ species: MonsterSpecies;
+ // logic
+ 
+ constructor(name: string, stats: number[], dice: string, species: MonsterSpecies) {
+  super();
+  this.species = species;
+ }
 
+ 
 }
 
 
