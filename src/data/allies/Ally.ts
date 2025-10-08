@@ -3,24 +3,21 @@ import { Skill } from "#types/Skill.ts';
   
 export class Ally extends Entity {
   level: number;
-  baseAttackPower: number;
-  baseStats: number[];
+  readonly baseAttackPower: number;
+  readonly baseStats: number[];
   skillData: [number, skill][];
   powerScale: () => number;
   
   
-  constructor(name: string, stats: number[], attackPower: number, level: number, powerscale: () => number) {
+  constructor(name: string, stats: number[], attackPower: number, level: number, powerScale: () => number) {
     super();
     this.baseAttackPower = attackPower;
     this.baseStats = stats[];
     this.level = level;
     this.skillData = [];
+    this.powerScale = powerScale;
     
-    this.rescaleAlly();
-  }
-
-  public rescaleAlly() {
-    this.powerscale();
+    this.powerScale();
   }
 
 }
