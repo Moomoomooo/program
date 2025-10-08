@@ -14,3 +14,5 @@ export type Skill {
   readonly flags: SkillFlags[];
   use: () => any;
 }
+
+export function newSkill()
