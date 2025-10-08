@@ -14,5 +14,20 @@ export type Skill {
   readonly flags: SkillFlags[];
   use: () => any;
 }
+ 
+export function newSkill(name: string, master: Entity, cooldown: number, flags: SkillFlags[], phase: SkillPhases, targets: SkillTargets , effect: () => any): Skill {
 
-export function newSkill()
+    const s = {
+      name: name,
+      master: Entity;
+      cooldown: cooldown,
+      time: 0,
+      ready: true,
+      targets: targets,
+      flags: flags,
+      phase: phase,
+      use: effect,
+    };
+    skills.push(s);
+  }
+}
