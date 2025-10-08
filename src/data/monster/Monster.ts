@@ -9,6 +9,6 @@ export class Monster extends Entity {
 
 /* new Monster("Cacophony of the Holy")
 
-cacophony.addSkill("Song of the Secret", 3, SkillTarget.ALL_OTHERS, SkillPhase.ATTACK, 
+cacophony.addSkill("Song of the Secret", 3, SkillTarget.ALL_OTHERS, SkillPhase.ATTACK, [SkillFlags.HOLY]
 
 */
