@@ -11,5 +11,6 @@ export enum SkillFlags {
   // 
   BUFF,
   DEBUFF,
-  COMPOUNDING
+  COMPOUNDING,
+  DAMAGING
 }
