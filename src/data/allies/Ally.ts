@@ -9,7 +9,7 @@ export class Ally extends Entity {
   readonly baseAttackPower: number;
   readonly baseStats: number[];
   skillData: LevelUpSkill[];
-  powerScale: () => number;
+  powerScale: (self: Ally) => void;
   allyId: AllyId;
   location: RegionId;
   
@@ -23,7 +23,7 @@ export class Ally extends Entity {
     this.skillData = [];
     this.powerScale = powerScale;
     
-    this.powerScale();
+    this.powerScale(this);
   }
 
   public isHireable(): boolean {
