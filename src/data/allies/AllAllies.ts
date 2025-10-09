@@ -10,7 +10,7 @@ import { AllyId } from '#enums/AllyId.ts';
 export const AllAllies: Ally[] = {};
 
 
-const fido = new Ally("Fido", [6, 1, 0, 2, 4], 4, niam.level, (): number => {
+const fido = new Ally("Fido", AllyId.FIDO, [6, 1, 0, 2, 4], 4, niam.level, (): number => {
   for (let i = 0; i < 6; i++) {
     this.stats[i] = this.baseStats[i] + this.level;
   } 
