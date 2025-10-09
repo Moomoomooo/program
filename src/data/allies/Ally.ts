@@ -1,6 +1,7 @@
 import { Entity } from '#data/Entity.ts';
 import { Skill } from '#types/Skill.ts';
 import { LevelUpSkill } from '#types/LevelUpSkill.ts';
+import { RegionId } from '#enums/RegionId.ts';
   
 export class Ally extends Entity {
   level: number;
@@ -8,6 +9,7 @@ export class Ally extends Entity {
   readonly baseStats: number[];
   skillData: LevelUpSkill[];
   powerScale: () => number;
+  location: RegionId;
   
   
   constructor(name: string, stats: number[], attackPower: number, level: number, powerScale: () => number) {
@@ -19,6 +21,10 @@ export class Ally extends Entity {
     this.powerScale = powerScale;
     
     this.powerScale();
+  }
+
+  public isHireable(): boolean {
+    
   }
 
 }
