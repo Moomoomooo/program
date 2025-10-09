@@ -5,6 +5,7 @@ import { SkillPhases } from '#enums/SkillPhases.ts';
 import { SkillTargets } from '#enums/SkillTargets.ts';
 import { niam } from '#player/Niam.ts';
 import { LevelUpSkill } from '#types/LevelUpSkill.ts';
+import { AllyId } from '#enums/AllyId.ts';
 
 export const AllAllies: Ally[] = {};
 
