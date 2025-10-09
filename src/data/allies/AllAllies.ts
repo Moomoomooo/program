@@ -10,13 +10,14 @@ import { AllyId } from '#enums/AllyId.ts';
 export const AllAllies: Ally[] = {};
 
 
-const fido = new Ally("Fido", AllyId.FIDO, [6, 1, 0, 2, 4], 4, niam.level, (): number => {
+const fido = new Ally("Fido", AllyId.FIDO, [6, 1, 0, 2, 4], 4, niam.level, (self: Ally): number => {
   for (let i = 0; i < 6; i++) {
-    this.stats[i] = this.baseStats[i] + this.level;
+    self.stats[i] = self.baseStats[i] + self.level;
   } 
-  this.stats[2] = 0;
-  this.attackPower = this.baseAttackPower + this.level;
+  self.stats[2] = 0;
+  self.attackPower = self.baseAttackPower + self.level;
 });
+
 const fidosLevelUpSkillList: LevelUpSkill[] = {
   [1, newSkill("Bark", fido, 3, [Skillflags.DEBUFF],SkillPhase.ATTACK, SkillTargets.ALL_ENEMIES, (): any => {
     
