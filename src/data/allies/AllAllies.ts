@@ -9,10 +9,11 @@ import { LevelUpSkill } from '#types/LevelUpSkill.ts';
 export const AllAllies: Ally[] = {};
 
 
-const fido = new Ally("Fido", [5, 0, 0, 2, 4], 4, niam.level, (): number => {
+const fido = new Ally("Fido", [6, 1, 0, 2, 4], 4, niam.level, (): number => {
   for (let i = 0; i < 6; i++) {
     this.stats[i] = this.baseStats[i] + this.level;
-  }
+  } 
+  this.stats[2] = 0;
   this.attackPower = this.baseAttackPower + this.level;
 });
 const fidosLevelUpSkillList: LevelUpSkill[] = {
