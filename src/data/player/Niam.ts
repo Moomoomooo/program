@@ -8,7 +8,7 @@ import { Ally } from '#allies/Ally.ts';
 
 export const niam: Entity = new Entity("Niam", [10, 0, 0, 1, 5], 10);
 niam.level = 1;
-niam.Allies = [];
+niam.currentAllies = [];
 
 niam.levelUp = (): void => {
   this.level++;
