@@ -4,7 +4,7 @@ export enum DmgResistance {
   FIRE, // for example,  a fireball spell will deal fire damage.
   ICE,
   LIGHTNING,
-  POISON,
+  VENOM,
   HOLY,
   UNHOLY
 }
