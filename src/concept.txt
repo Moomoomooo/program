@@ -7,7 +7,7 @@ Heaven is rotting. Infected.
 
 $$ BEGINNING $$
 
-tutorial fight is Red, Niam's einherjar mentor. Red is a [PHYSICAL] and [BLEED]-based fighter. Introduces the player to basic attacks, abilities, and conditions. Based on little Red Riding hood. A blonde woman with a bright red cowl. Red fights with a heavily stylized axe (woodsman reference & ), which trails blood-red energy around when she swings it (the energy is a reference to the wine Red Riding Hood carries in her basket.) 
+tutorial fight is Red, Niam's einherjar mentor. Red is a [PHYSICAL] and [BLEED]-based fighter. Introduces the player to basic attacks, abilities, and conditions. Based on little Red Riding hood. A blonde woman with a bright red cowl. Red fights with a pair of hatchets (woodsman reference), which trails blood-red energy around when she swings it (the energy is a reference to the wine Red Riding Hood carries in her basket.) 
 
 
 In the climax of the first act, Red saves Niam from Fenrir (the big bad wolf), giving our protagonist a chance to flee. Red's fate becomes uncertain, and won't be encountered again until act IV. 
@@ -17,11 +17,13 @@ In the climax of the first act, Red saves Niam from Fenrir (the big bad wolf), g
 act IV Boss: Rotting Red. Once again an agile [PHYSICAL] and [BLEED]-based fighter, but corrupted to be much more agressive and deadly. Now based on the Nuckalevee (Red Riding Hood. Like Riding a Horse, get it?) and bears an acid-scarred appearance (like half-dissolved in stomach acid). The blades of her axe have now fused to her wrists in place of her hands, which have detached and enlarged into grotesque disembodied "wings" that float behind her back. ("What big hands you have!"). A single massive inhuman eye dominates what was once her face, mirrored by two other eye embedded in each of her palms ("what big eyes you have!"). The horse-half has an enormous slavering maw. Its mane is made of human teeth. ("What big teeth you have!"). The ears of both the horse and the human body are elongated into wicked, fleshy horns. ("what big ears you have!") 
 
 
+Act VIII boss: Surtr
 
-? Final Boss, first stage: Fenris Wolf ?
+
+Final Boss, first stage: Fenris Wolf. A powerful infected Wolf. Invulnerable to [PHYSICAL] damage. 
 
 
-? Final Boss: Ymir, World's Soul. Design heavily based on Tlaltecuhtli, mesoamerican "earth monster" deity. A powerful [DIVINITY] that can wield [FIRE] (Muspelhiem), [ICE] (niflheim) attacks, while afflicing the player with his powerful illusion [SPELL]s (ginnunagap). This is based on the creation myth where the muspelhiem and niflhiem created Ymir in the Gunningagap in the original mythology. As the "earth monster", it can also deal powerful [PHYSICAL] damage and inflict heavy [BLEED] (because aztec blood sacrifices were performed to appease the earth monster).  
-Definitely an include, but Fenrir feels like a very appropriate final boss. Perhaps a parallel could be drawn to cutting open the wolf's stomach? forshaow the 'grandmother' of all things. Ooh, i like that. Fenrir can talk about being the "incubator" for the infection's final stage. ?
+Final Boss: Ymir, World's Soul. Design heavily based on Tlaltecuhtli, mesoamerican "earth monster" deity. A powerful [DIVINITY] that can wield [FIRE] (Muspelhiem), [ICE] (niflheim) attacks, while afflicing the player with his powerful illusion [SPELL]s (ginnunagap). This is based on the creation myth where the muspelhiem and niflhiem created Ymir in the Gunningagap in the original mythology. As the "earth monster", it can also deal powerful [PHYSICAL] damage and inflict heavy [BLEED] (because aztec blood sacrifices were performed to appease the earth monster).  
+A parallel is drawn to cutting open the wolf's stomach? forshaow the 'grandmother' of all things. Fenrir talks about being the "incubator" for the infection's final stage. 
 
 Optional Boss: Jormungandr. Highly difficult [VENOM] and [PHYSICAL] based fighter. heavily resists [MAGIC] but is weak to [LIGHTNING]. Resides in [EIELA] but is definitely an endgame boss. Even dealing it [PHYSICAL] damage inflicts retaliatory [VENOM] damage. Defeating him grants [Fang of the World] weapon and [Serpent's Scale-Mail] armor items.
